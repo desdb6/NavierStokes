@@ -1,8 +1,4 @@
 # Class to simulate an incompressible Newtonian fluid
-# Author: Des De Borger
-# Mail: des.deborger@student.uantwerpen.be
-# Deadline: 23/05/25
-# Last change: 17/05/25
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -1127,4 +1123,5 @@ def boundsCheck(numbers, lb, ub):
     """Checks if list of numbers is in a given interval."""
     for number in numbers:
         if np.any([number<lb, number>ub]):
+
             raise ValueError(f'Error, the variable {number} has to be between {lb} and {ub}!')
