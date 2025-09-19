@@ -350,32 +350,32 @@ def exercise3():
     # laminar_flow_obstacle.plot_subplots()
     # print(f"The Reynolds number is equal to: {(laminar_flow_obstacle.Ly*laminar_flow_obstacle.rho*np.average(np.sqrt(laminar_flow_obstacle.u**2+laminar_flow_obstacle.v**2)))/(laminar_flow_obstacle.mu)}")
 
-    ### 4 ###
-    F=20
-    mu=0.1
-    obstacle.set_dimensions(x0=0.7, x1=1.3, y0=0, y1=0.4)
-    laminar_flow_obstacle.set_parameters(dx= 0.03, dy=0.03, dt=10**(-4), mu=mu, rho=1, U=0, Fx=F)
-    laminar_flow_obstacle.simulate_system(max_iterations=10**5)
-    laminar_flow_obstacle.update_reynolds_number()
-    laminar_flow_obstacle.plot_subplots()
+    # ### 4 ###
+    # F=20
+    # mu=0.1
+    # obstacle.set_dimensions(x0=0.7, x1=1.3, y0=0, y1=0.4)
+    # laminar_flow_obstacle.set_parameters(dx= 0.03, dy=0.03, dt=10**(-4), mu=mu, rho=1, U=0, Fx=F)
+    # laminar_flow_obstacle.simulate_system(max_iterations=10**5)
+    # laminar_flow_obstacle.update_reynolds_number()
+    # laminar_flow_obstacle.plot_subplots()
 
 
-    F=20
-    mu=0.1
-    obstacle.set_dimensions(x0=0.7, x1=1.3, y0=0, y1=0.6)
-    laminar_flow_obstacle.set_parameters(dx= 0.03, dy=0.03, dt=10**(-4), mu=mu, rho=1, U=0, Fx=F)
-    laminar_flow_obstacle.simulate_system(max_iterations=10**5)
-    laminar_flow_obstacle.update_reynolds_number()
-    laminar_flow_obstacle.plot_subplots()
+    # F=20
+    # mu=0.1
+    # obstacle.set_dimensions(x0=0.7, x1=1.3, y0=0, y1=0.6)
+    # laminar_flow_obstacle.set_parameters(dx= 0.03, dy=0.03, dt=10**(-4), mu=mu, rho=1, U=0, Fx=F)
+    # laminar_flow_obstacle.simulate_system(max_iterations=10**5)
+    # laminar_flow_obstacle.update_reynolds_number()
+    # laminar_flow_obstacle.plot_subplots()
 
 
-    F=20
-    mu=0.1
-    obstacle.set_dimensions(x0=0.7, x1=1.3, y0=0, y1=0.8)
-    laminar_flow_obstacle.set_parameters(dx= 0.03, dy=0.03, dt=10**(-4), mu=mu, rho=1, U=0, Fx=F)
-    laminar_flow_obstacle.simulate_system(max_iterations=10**5)
-    laminar_flow_obstacle.update_reynolds_number()
-    laminar_flow_obstacle.plot_subplots()
+    # F=20
+    # mu=0.1
+    # obstacle.set_dimensions(x0=0.7, x1=1.3, y0=0, y1=0.8)
+    # laminar_flow_obstacle.set_parameters(dx= 0.03, dy=0.03, dt=10**(-4), mu=mu, rho=1, U=0, Fx=F)
+    # laminar_flow_obstacle.simulate_system(max_iterations=10**5)
+    # laminar_flow_obstacle.update_reynolds_number()
+    # laminar_flow_obstacle.plot_subplots()
 
     return
 
@@ -569,4 +569,5 @@ def extras():
 
 if __name__=='__main__':
     main()
+
     
